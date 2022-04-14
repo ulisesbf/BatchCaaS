@@ -19,7 +19,7 @@ public class DemoApplication {
     @RequestMapping("/")
     String home() {
   	  Jedis jedis = new Jedis("127.0.0.1", 6379);
-		    jedis.auth("Armani16");
+		  //  jedis.auth("Armani16");
 		    System.out.println("Connected to Redis");
 		    jedis.set("foo", "bar");
 		    String value = jedis.get("foo");
