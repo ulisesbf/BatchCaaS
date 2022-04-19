@@ -17,7 +17,7 @@ public class DemoApplication {
     @RequestMapping("/")
     String home() {
     	  Jedis jedis = new Jedis("10.217.5.158", 6379);
-    	  String psw= "Armani16";
+    	  String psw= "SIpm3yYMHCYJGEoO";
 		    System.out.println(psw);
 		   jedis.auth(psw);
 		    System.out.println("Connected to Redis");
